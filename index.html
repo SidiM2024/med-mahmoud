@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع كيهيدي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo"> محمد محمود عبدالله</a>
+            <div class="toggle-menu" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#bio">السيرة الذاتية</a></li>
+                <li><a href="#success-stories">قصص نجاح</a></li>
+                <li><a href="#videos">فيديوهات</a></li>
+                <li><a href="#articles">المقالات</a></li>
+                <li><a href="#about">التعريف</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="site-header" id="home">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1 class="header-title">محمد محمود ولد عبد الله</h1>
+            <p class="header-subtitle">أستاذ العلوم الطبيعية - مصدر إلهام أجيال الوطن منذ 1989</p>
+            <a href="#bio" class="header-btn">اكتشف المزيد</a>
+        </div>
+    </header>
+
+    <section id="bio" class="bio">
+        <div class="container">
+            <h2 class="section-title">السيرة الذاتية</h2>
+            <div class="bio-content">
+                <div class="bio-image">
+                    <img src="photo_keyh.jpg" alt="أستاذ محمد محمود" />
+                </div>
+                <div class="bio-details">
+                    <h3>محمد محمود ولد عبد الله</h3>
+                    <p><strong>الملقب بـ "كيهيدي"</strong></p>
+                    <p>أستاذ مادة العلوم الطبيعية، تميز بأسلوبه التعليمي الفريد وإسهاماته في تربية الأجيال العلمية بموريتانيا. بدأ رحلته التعليمية في إعدادية كيهيدي عام 1989، واستمر في تقديم خبرته العلمية والتعليمية حتى اليوم.</p>
+                    
+                    <h4>المسيرة التعليمية</h4>
+                    <ul class="bio-timeline">
+                        <li>
+                            <span class="year">1989</span>
+                            <p>بدأ التدريس في إعدادية كيهيدي.</p>
+                        </li>
+                        <li>
+                            <span class="year">1991</span>
+                            <p>انتقل إلى نواكشوط للعمل في ثانوية البنين.</p>
+                        </li>
+                        <li>
+                            <span class="year">1992</span>
+                            <p>تم تحويله إلى لعيون واستمر في التدريس هناك. حتى 1995</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="success-stories" id="success-stories">
+        <div class="container">
+            <h2 class="section-title">قصص النجاح</h2>
+            <div class="stories">
+                <div class="story">
+                    <h3>سيدي محمد - خمس محاولات حتى النجاح</h3>
+                    <p>
+                        سيدي محمد كان شاباً طموحاً ولكنه فشل في البكالوريا أربع مرات متتالية. 
+                        عندما التحق بفصول الأستاذ محمد محمود، وجد الدعم والتوجيه الذي كان ينقصه.
+                        في المحاولة الخامسة، حقق النجاح بتفوق.
+                    </p>
+                </div>
+                <div class="story">
+                    <h3>آمنة - من خوف مادة العلوم إلى التميز</h3>
+                    <p>
+                        آمنة كانت تخشى مادة العلوم ما جعلها تفشل مرتين في امتحانات البكالوريا. 
+                        عندما بدأت حضور دروس الأستاذ محمد محمود، ساعدها على تغيير نظرتها للمادة.
+                        بفضل الله، ثم بفضل الأستاذ، تمكنت من اجتياز البكالوريا بامتياز.
+                    </p>
+                </div>
+                <div class="story">
+                    <h3>محمد الأمين - النجاح بعد سبع سنوات من الإصرار</h3>
+                    <p>
+                        محمد الأمين عانى من ظروف قاسية وأخفق في البكالوريا سبع مرات. التحق بفصول الأستاذ محمد محمود،
+                        الذي دعمه نفسياً وأكاديمياً. في السنة الثامنة، نجح وحقق حلمه بالالتحاق بالجامعة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="videos-section" id="videos">
+        <div class="container">
+            <h2 class="section-title">فيديوهات عن الأستاذ</h2>
+            <p class="section-description">شاهد بعض الفيديوهات التي تسلط الضوء على تأثير الأستاذ محمد محمود في حياة الطلاب وشهادات دكاترة عنه.</p>
+            <div class="video-grid">
+                <!-- فيديو 1 - الأستاذ يتحدث -->
+                <div class="video-card">
+                    <video controls>
+                        <source src="./vidio/v2.mp4" type="video/mp4">
+                        متصفحك لا يدعم مشغل الفيديو.
+                    </video>
+                    <h3>الأستاذ يتحدث عن أهمية التعليم</h3>
+                </div>
+    
+                <!-- فيديو 2 - الأستاذ يتحدث -->
+                <div class="video-card">
+                    <video controls>
+                        <source src="./vidio/v3.mp4" type="video/mp4">
+                        متصفحك لا يدعم مشغل الفيديو.
+                    </video>
+                    <h3>نصائح الأستاذ للطلاب</h3>
+                </div>
+    
+    
+                <!-- فيديو شهادة دكتور -->
+                <div class="video-card">
+                    <video controls>
+                        <source src="./vidio/vi4.mp4" type="video/mp4">
+                        متصفحك لا يدعم مشغل الفيديو.
+                    </video>
+                    <h3>شهادة دكاترة عن الأستاذ</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="articles-section" id="articles">
+        <div class="container">
+            <h2 class="section-title">مقالات عن الأستاذ محمد محمود</h2>
+            <p class="section-description">استعرض هنا بعض المقالات التي تعبر عن مسيرة الأستاذ محمد محمود ولد عبد الله الملقب "كيهيدي"، واهتمامه بالتعليم وأثره الكبير على حياة طلابه.</p>
+            <div class="articles-grid">
+                <!-- مقال 1 -->
+                <div class="article-card">
+                    <h3 class="article-title">أثر الأستاذ في التعليم: رحلة حياة</h3>
+                    <p class="article-content">الأستاذ محمد محمود، الذي بدأ مسيرته التعليمية منذ عام 1987، شهد العديد من اللحظات التي شكلت مسيرته. من خلال تفانيه في التعليم وحب الطلاب له، استطاع أن يصبح رمزًا من رموز التعليم في وطنه. هذه المقالة تسلط الضوء على رحلته وتجاربه التي مرت بها، والتأثير العميق الذي أحدثه في الأجيال التي تخرجت على يديه.</p>
+                    <a href="#" class="read-more">اقرأ المزيد</a>
+                </div>
+    
+                <!-- مقال 2 -->
+                <div class="article-card">
+                    <h3 class="article-title">تأثير محمد محمود على الطلاب: قصص نجاح ملهمة</h3>
+                    <p class="article-content">لم يكن الأستاذ محمد محمود مجرد معلم، بل كان مرشدًا وناصحًا. طلابه يروي العديد منهم كيف أن وجوده في حياتهم أكسبهم الشجاعة لمواجهة تحديات الحياة. في هذا المقال، نشارك بعض قصص النجاح التي بدأ فيها الطلاب طريقهم الصعب نحو النجاح بفضل إرشاد الأستاذ محمد محمود ودعمه المتواصل.</p>
+                    <a href="#" class="read-more">اقرأ المزيد</a>
+                </div>
+    
+                <!-- مقال 3 -->
+                <div class="article-card">
+                    <h3 class="article-title">من الحصص الدراسية إلى التأثير المجتمعي: محمد محمود</h3>
+                    <p class="article-content">كان لأستاذ محمد محمود حضور مميز في الصف الدراسي، ولكن تأثيره امتد إلى ما هو أبعد من ذلك. في هذه المقالة نناقش كيف أثر الأستاذ على المجتمع من خلال مساهماته التعليمية والاجتماعية، وكيف قام بتوجيه العديد من الشباب نحو النجاح في الحياة العملية.</p>
+                    <a href="#" class="read-more">اقرأ المزيد</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="interview-section" id="interview">
+        <div class="container">
+            <h2 class="section-title">مقابلة مع الأستاذ محمد محمود</h2>
+            <p class="section-description">شاهد المقابلة التي يتحدث فيها الأستاذ محمد محمود عن مسيرته التعليمية وأثره الكبير في المجتمع.</p>
+            <a href="https://www.facebook.com/share/v/1Le5tdnCJF/" class="interview-link">شاهد المقابلة</a>
+        </div>
+    </section>
+
+    <section class="about-me-section" id="about">
+        <div class="container">
+            <h2 class="section-title">عنّي</h2>
+            <p class="section-description">
+                مرحبًا! أنا <strong>سيدي محمد عبد الرحمان</strong>، طالب أتيحت لي الفرصة للتعلم على يد أستاذي العزيز <strong>محمد محمود</strong> الذي أثر في حياتي الدراسية بشكل كبير.
+                هذه الكلمات هي قليل جدًا في حقه، وأنا ممتن له على كل ما قدمه لي ولغيري من الطلاب.
+            </p>
+            <p class="section-description">
+                دائمًا ما كان الأستاذ محمد محمود يدفعنا لتحقيق الأفضل، ومن خلاله تعلمنا ليس فقط العلم، بل أيضًا الإصرار والعزيمة.
+            </p>
+    
+    
+            <div class="social-links">
+                <h3>تابعني على وسائل التواصل الاجتماعي:</h3>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/SidiMohamed.SidiAbdella.1610?mibextid=ZbWKwL" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i> فيس بوك</a></li>
+                    <li><a href="https://www.tiktok.com/@sidi.med141?_t=8s6suf2rdrx&_r=1" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i> تيك توك</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
