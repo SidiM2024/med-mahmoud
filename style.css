@@ -856,3 +856,100 @@ body {
 .whatsapp {
     background-color: #25d366;
 }
+
+
+/* إعدادات الأنيميشن للمحتوى */
+.story {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+.story:hover {
+    transform: translateY(-10px);
+}
+
+/* حركة الظهور */
+.story[data-aos="fade-up"] {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-out;
+}
+
+.story-img {
+    flex: 1;
+    padding: 10px;
+}
+
+.story-logo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.story-logo:hover {
+    transform: scale(1.05);
+}
+
+.story-content {
+    flex: 2;
+    padding-left: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+h3:hover {
+    color: #2980b9;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.story-content p strong {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* تأثيرات إضافية عند التمرير */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .story {
+        flex-direction: column;
+    }
+
+    .story-img {
+        margin-bottom: 20px;
+    }
+
+    .story-content {
+        padding-left: 0;
+    }
+}
